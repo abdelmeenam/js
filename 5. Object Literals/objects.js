@@ -23,6 +23,7 @@ let user = {
     }
 };
 
+// console.log(user);
 //---it can be accessing using dot and square brackets
 // console.log(user);
 // console.log(user.age);
