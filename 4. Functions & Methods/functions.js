@@ -3,6 +3,7 @@ function greet() {
     console.log('Hello there');
 }
 //greet();
+// arrow function
 
 
 // function expression : store the function inside a variable
