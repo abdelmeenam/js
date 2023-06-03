@@ -23,7 +23,8 @@ const getTodos = (callback) => {
         }
     });
 
-    request.open('get', 'https://jsonplaceholder.typicode.com/todos/');
+    //request.open('get', 'https://jsonplaceholder.typicode.com/todos/');
+    request.open('get', 'todos.json');
     request.send();
 }
 
