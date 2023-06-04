@@ -1,0 +1,12 @@
+[
+  {
+    "task": "study",
+    "status": true,
+    "time": "30min"
+  },
+  {
+    "task": "code",
+    "status": false,
+    "time": "1h"
+  }
+]

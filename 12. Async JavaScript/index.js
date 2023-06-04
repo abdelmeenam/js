@@ -10,7 +10,7 @@
     - JavaScript is a single threaded language (Statment by statment)
 */
 
-const getTodos = (callback) => {
+const getTodos = (resource, callback) => {
 
     const request = new XMLHttpRequest();
 
@@ -24,20 +24,23 @@ const getTodos = (callback) => {
     });
 
     //request.open('get', 'https://jsonplaceholder.typicode.com/todos/');
-    request.open('get', 'todos.json');
+    request.open('get', resource);
     request.send();
 }
 
-getTodos((err, data) => {
-    console.log('callback fired')
-    if (err) {
-        console.log(err);
-    } else {
+getTodos('todos/luigi.json', (err, data) => {
+    console.log(data);
+
+    getTodos('todos/todos.json', (err, data) => {
         console.log(data);
-    }
-})
 
+        getTodos('todos/lolo.json', (err, data) => {
+            console.log(data);
+        });
 
+    });
+
+});
 
 
 
