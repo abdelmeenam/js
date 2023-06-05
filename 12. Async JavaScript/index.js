@@ -35,7 +35,9 @@ getTodos('todos/luigi.json', (err, data) => {
         console.log(data);
 
         getTodos('todos/lolo.json', (err, data) => {
+
             console.log(data);
+
         });
 
     });
