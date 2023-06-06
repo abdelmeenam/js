@@ -28,6 +28,7 @@ const getTodos = (resource, callback) => {
     request.send();
 }
 
+
 getTodos('todos/luigi.json', (err, data) => {
     console.log(data);
 
