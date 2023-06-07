@@ -1,7 +1,6 @@
 /* fetch api :
     - return a promise 
     - the promise is rejected only when we get netwoek error
-
 */
 
 fetch('todos/lolo.json').then(data => {
@@ -16,3 +15,4 @@ fetch('todos/lolo.json').then(data => {
     .catch(err => {
         console.log('rejected', err);
     });
+
