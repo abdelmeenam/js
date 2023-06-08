@@ -20,7 +20,9 @@ getSomeThing().then(data => {
 })
 
 const getTodos = (resource) => {
+
     const request = new XMLHttpRequest();
+
     return new Promise((resolve, reject) => {
         request.addEventListener('readystatechange', () => {
             if (request.readyState === 4 && request.status === 200) {
