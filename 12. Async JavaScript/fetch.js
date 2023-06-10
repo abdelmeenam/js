@@ -5,7 +5,8 @@
     - when promise resolved we fire "then" funcion
 */
 
-// fetch('todos/lolo.json').then(data => {
+// fetch('todos/lolo.json')
+//  .then(data => {
 //     // it only retuen promise object
 //     // console.log('resolved', data);
 //     return data.json();}).then(data => {
