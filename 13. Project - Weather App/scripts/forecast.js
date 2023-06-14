@@ -12,8 +12,6 @@ const getWeather = async (id) => {
     return data[0];
 };
 
-
-
 // get ciry information
 const getCity = async (city) => {
     const base = 'http://dataservice.accuweather.com/locations/v1/cities/search';
@@ -32,6 +30,5 @@ getCity('benha').then(data => {
     return getWeather(data.Key);
 }).then(data => {
     console.log(data);
-})
-    .catch(err => console.log(err));
+}).catch(err => console.log(err));
 
